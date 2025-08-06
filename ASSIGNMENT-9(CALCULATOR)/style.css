@@ -1,0 +1,71 @@
+/* Set page background and center container */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #e0e0e0; /* change this to any color you want */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Main container styling */
+.main {
+  font-family: sans-serif;
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  background-color: lightgray;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  padding: 2rem;
+}
+
+/* Form layout */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Input styling */
+input {
+  padding: 5px;
+  border: none; 
+}
+
+/* Buttons grid */
+.buttons {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 30px);
+  gap: 10px;
+}
+
+/* Button styling */
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 3px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  background-color: #555;
+  color: white;
+  padding: 5px 16px;
+  transition: all 300ms ease-out;
+}
+
+/* Button pressed effect */
+button:active {
+  scale: 0.95;
+  transform: translateY(3px);
+}
+
+/* Button hover effect */
+button:hover {
+  background-color: #333;
+}

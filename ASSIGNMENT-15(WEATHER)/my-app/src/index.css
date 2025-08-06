@@ -1,0 +1,60 @@
+/* WeatherApp.css or index.css */
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom, #83a4d4, #b6fbff);
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  min-height: 100vh;
+  color: #333;
+}
+
+.weather-container {
+  background-color: white;
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #1e3c72;
+}
+
+form {
+  margin-bottom: 25px;
+}
+
+input[name="city"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #1e3c72;
+  border-radius: 8px;
+  width: 70%;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-left: 10px;
+  background-color: #1e3c72;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #295aa5;
+}
+
+.weather-info h2,
+.weather-info p {
+  margin: 10px 0;
+  font-weight: normal;
+}

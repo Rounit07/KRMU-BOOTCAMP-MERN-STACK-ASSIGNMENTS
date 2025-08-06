@@ -1,0 +1,108 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(to bottom right, #ffe0cc, #eecbff);
+
+
+}
+
+.card-container {
+  width: 350px;
+  background: linear-gradient(to bottom right, #ffe0cc, #ffb3b3);
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  padding: 30px 20px;
+  text-align: center;
+  position: relative;
+  border: 2px solid #ff9999;
+}
+
+.gradient-text {
+  background: linear-gradient(to right, #ff6666, #66cc66);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.card-image {
+  width: 100px;
+  margin: 15px 0;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+}
+
+.message-box {
+  background: #fff0f5;
+  padding: 10px;
+  border: 1px dashed #ff66b2;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #555;
+}
+
+.surprise-btn {
+  background: #ff6347;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+  transition: background 0.3s ease;
+}
+
+.surprise-btn:hover {
+  background: #ff4500;
+}
+
+/* Balloon base */
+.balloon {
+  width: 40px;
+  height: 55px;
+  background-color: red;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  position: absolute;
+  animation: float 3s ease-in-out infinite;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+/* Balloon ropes */
+.rope {
+  width: 2px;
+  height: 25px;
+  background-color: #333;
+  margin: 0 auto;
+  margin-top: -5px;
+}
+
+/* Specific balloon positions */
+.balloon-left {
+  top: -30px;
+  left: -20px;
+  animation-delay: 0s;
+}
+
+.balloon-right {
+  top: -30px;
+  right: -20px;
+  animation-delay: 1.5s;
+}
+
+/* Floating animation */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
